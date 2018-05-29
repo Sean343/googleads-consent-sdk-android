@@ -75,9 +75,15 @@ public class ConsentForm {
         this.appPrivacyPolicyURL = builder.appPrivacyPolicyURL;
         this.dialog = new Dialog(context);
         this.loadState = LoadState.NOT_READY;
+        
+        
 
         this.webView = new WebView(context);
         this.dialog.setContentView(webView);
+        
+        this.webView.setBackgroundColor(Color.TRANSPARENT);
+
+        
         this.dialog.setCancelable(false);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(
