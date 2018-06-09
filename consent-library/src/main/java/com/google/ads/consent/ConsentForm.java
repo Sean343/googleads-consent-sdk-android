@@ -73,7 +73,7 @@ public class ConsentForm {
         this.nonPersonalizedAdsOption = builder.nonPersonalizedAdsOption;
         this.adFreeOption = builder.adFreeOption;
         this.appPrivacyPolicyURL = builder.appPrivacyPolicyURL;
-        this.dialog = new Dialog(context);
+       this.dialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);
         this.loadState = LoadState.NOT_READY;
         
         
@@ -293,8 +293,12 @@ public class ConsentForm {
             return;
         }
 
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlString));
-        context.startActivity(browserIntent);
+try {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlString));
+            context.startActivity(browserIntent);
+        } catch (ActivityNotFoundException exception) {
+            listener.onConsentFormError("No Activity found to handle browser intent.");
+        }
     }
 
     private void handleDismiss(String status) {
