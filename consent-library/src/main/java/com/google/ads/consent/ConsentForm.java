@@ -79,7 +79,7 @@ public class ConsentForm {
         this.nonPersonalizedAdsOption = builder.nonPersonalizedAdsOption;
         this.adFreeOption = builder.adFreeOption;
         this.appPrivacyPolicyURL = builder.appPrivacyPolicyURL;
-       this.dialog = new Dialog(context);
+       this.dialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);
         this.loadState = LoadState.NOT_READY;
         
         
@@ -281,9 +281,8 @@ public class ConsentForm {
         this.loadState = LoadState.LOADING;
 
 
-        String countryCode =  Resources.getSystem().getConfiguration().locale.getISO3Country();
+        String countryCode =  this.context.getResources().getConfiguration().locale.getLanguage();
 
-        Log.i("loooool", countryCode);
 
         // german
         if(countryCode == "de") {
