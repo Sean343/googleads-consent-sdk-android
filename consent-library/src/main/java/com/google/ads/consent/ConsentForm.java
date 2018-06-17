@@ -283,6 +283,9 @@ public class ConsentForm {
 
         String countryCode =  this.context.getResources().getConfiguration().locale.getLanguage();
 
+        Log.i("looooool222", countryCode);
+
+
 
         // german
         if(countryCode == "de") {
