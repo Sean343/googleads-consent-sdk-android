@@ -4,11 +4,24 @@
     <list default="true" id="1411a81b-9212-47b0-a6a8-dad1d1d86ae9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.5.1/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.5.1/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.5.1/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$1.class" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$1.class" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$2.class" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$2.class" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$3.class" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$3.class" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$Builder.class" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$Builder.class" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$LoadState.class" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm$LoadState.class" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm.class" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/classes/debug/com/google/ads/consent/ConsentForm.class" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/intermediates/packaged-classes/debug/classes.jar" afterPath="$PROJECT_DIR$/consent-library/build/intermediates/packaged-classes/debug/classes.jar" />
+      <change beforePath="$PROJECT_DIR$/consent-library/build/outputs/aar/consent-library-debug.aar" afterPath="$PROJECT_DIR$/consent-library/build/outputs/aar/consent-library-debug.aar" />
+      <change beforePath="$PROJECT_DIR$/consent-library/consent-library.iml" afterPath="$PROJECT_DIR$/consent-library/consent-library.iml" />
+      <change beforePath="$PROJECT_DIR$/consent-library/src/main/java/com/google/ads/consent/ConsentForm.java" afterPath="$PROJECT_DIR$/consent-library/src/main/java/com/google/ads/consent/ConsentForm.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,12 +50,22 @@
       <file leaf-file-name="ConsentForm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/consent-library/src/main/java/com/google/ads/consent/ConsentForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="307" column="12" lean-forward="false" selection-start-line="307" selection-start-column="12" selection-end-line="307" selection-end-column="12" />
+            <state relative-caret-position="361">
+              <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
               <folding>
-                <element signature="e#14405#14406#0" expanded="true" />
-                <element signature="e#14451#14452#0" expanded="true" />
+                <element signature="e#14454#14455#0" expanded="true" />
+                <element signature="e#14500#14501#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsentFormListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consent-library/src/main/java/com/google/ads/consent/ConsentFormListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,8 +74,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>load</find>
       <find>raw</find>
+      <find>load</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2331,13 +2354,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/consent-library/src/main/java/com/google/ads/consent/ConsentFormListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/consent-library/src/main/java/com/google/ads/consent/ConsentForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="307" column="12" lean-forward="false" selection-start-line="307" selection-start-column="12" selection-end-line="307" selection-end-column="12" />
+        <state relative-caret-position="361">
+          <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
           <folding>
-            <element signature="e#14405#14406#0" expanded="true" />
-            <element signature="e#14451#14452#0" expanded="true" />
+            <element signature="e#14454#14455#0" expanded="true" />
+            <element signature="e#14500#14501#0" expanded="true" />
           </folding>
         </state>
       </provider>

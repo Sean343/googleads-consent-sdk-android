@@ -32,11 +32,14 @@ import android.os.Build;
 import android.support.v7.widget.ThemedSpinnerAdapter;
 import android.text.TextUtils;
 import android.util.Base64;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
+
 import com.google.gson.Gson;
 import java.io.ByteArrayOutputStream;
 import java.net.URL;
@@ -76,7 +79,7 @@ public class ConsentForm {
         this.nonPersonalizedAdsOption = builder.nonPersonalizedAdsOption;
         this.adFreeOption = builder.adFreeOption;
         this.appPrivacyPolicyURL = builder.appPrivacyPolicyURL;
-       this.dialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);
+       this.dialog = new Dialog(context);
         this.loadState = LoadState.NOT_READY;
         
         
@@ -279,6 +282,8 @@ public class ConsentForm {
 
 
         String countryCode =  Resources.getSystem().getConfiguration().locale.getISO3Country();
+
+        Log.i("loooool", countryCode);
 
         // german
         if(countryCode == "de") {
