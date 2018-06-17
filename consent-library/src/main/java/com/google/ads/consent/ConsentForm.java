@@ -21,6 +21,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -28,6 +29,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
+import android.support.v7.widget.ThemedSpinnerAdapter;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.view.ViewGroup;
@@ -261,6 +263,8 @@ public class ConsentForm {
     }
 
     public void load() {
+
+
         if (this.loadState == LoadState.LOADING) {
             listener.onConsentFormError("Cannot simultaneously load multiple consent forms.");
             return;
@@ -272,7 +276,40 @@ public class ConsentForm {
         }
 
         this.loadState = LoadState.LOADING;
-        this.webView.loadUrl("file:///android_asset/consentform.html");
+
+
+        String countryCode =  Resources.getSystem().getConfiguration().locale.getISO3Country();
+
+        // german
+        if(countryCode == "de") {
+            this.webView.loadUrl("file:///android_asset/consentform_de.html");
+
+        }
+        else if(countryCode == "es") {
+            this.webView.loadUrl("file:///android_asset/consentform_es.html");
+
+        }
+        else if(countryCode == "fr") {
+            this.webView.loadUrl("file:///android_asset/consentform_fr.html");
+
+        }
+        else if(countryCode == "it") {
+            this.webView.loadUrl("file:///android_asset/consentform_it.html");
+
+        }
+        else if(countryCode == "nl") {
+            this.webView.loadUrl("file:///android_asset/consentform_nl.html");
+
+        }  else if(countryCode == "pt") {
+            this.webView.loadUrl("file:///android_asset/consentform_pt.html");
+
+        }
+        else{
+            this.webView.loadUrl("file:///android_asset/consentform.html");
+
+        }
+
+
     }
 
     private void handleLoadComplete(String status) {
