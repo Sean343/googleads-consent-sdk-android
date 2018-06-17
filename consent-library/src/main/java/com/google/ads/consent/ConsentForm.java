@@ -59,6 +59,7 @@ public class ConsentForm {
     private final Dialog dialog;
     private final WebView webView;
     private LoadState loadState;
+    String codeCode;
 
     private enum LoadState {
         NOT_READY,
@@ -66,7 +67,8 @@ public class ConsentForm {
         LOADED
     }
 
-    private ConsentForm(Builder builder) {
+    private ConsentForm(Builder builder, String countryCode) {
+        this.codeCode = countryCode;
         this.context = builder.context;
 
         if (builder.listener == null) {
@@ -217,7 +219,7 @@ public class ConsentForm {
         }
 
         public ConsentForm build() {
-            return new ConsentForm(this);
+            return new ConsentForm(this, "en");
         }
     }
 
@@ -281,7 +283,7 @@ public class ConsentForm {
         this.loadState = LoadState.LOADING;
 
 
-        String countryCode =  this.context.getResources().getConfiguration().locale.getLanguage();
+        String countryCode =  this.codeCode;
 
         Log.i("looooool222", countryCode);
 
