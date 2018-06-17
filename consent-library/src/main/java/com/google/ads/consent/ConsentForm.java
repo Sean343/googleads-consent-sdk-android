@@ -59,7 +59,7 @@ public class ConsentForm {
     private final Dialog dialog;
     private final WebView webView;
     private LoadState loadState;
-    String codeCode;
+    public static String country123;
 
     private enum LoadState {
         NOT_READY,
@@ -67,8 +67,7 @@ public class ConsentForm {
         LOADED
     }
 
-    private ConsentForm(Builder builder, String countryCode) {
-        this.codeCode = countryCode;
+    private ConsentForm(Builder builder) {
         this.context = builder.context;
 
         if (builder.listener == null) {
@@ -185,12 +184,15 @@ public class ConsentForm {
         private boolean adFreeOption;
         private final URL appPrivacyPolicyURL;
 
-        public Builder(Context context, URL appPrivacyPolicyURL) {
+
+        public Builder(Context context, URL appPrivacyPolicyURL, String code) {
             this.context = context;
             this.personalizedAdsOption = false;
             this.nonPersonalizedAdsOption = false;
             this.adFreeOption = false;
             this.appPrivacyPolicyURL = appPrivacyPolicyURL;
+
+            country123 = code;
 
             if (this.appPrivacyPolicyURL == null) {
                 throw new IllegalArgumentException("Must provide valid app privacy policy url"
@@ -219,7 +221,7 @@ public class ConsentForm {
         }
 
         public ConsentForm build() {
-            return new ConsentForm(this, "en");
+            return new ConsentForm(this);
         }
     }
 
@@ -283,7 +285,7 @@ public class ConsentForm {
         this.loadState = LoadState.LOADING;
 
 
-        String countryCode =  this.codeCode;
+        String countryCode =  country123;
 
         Log.i("looooool222", countryCode);
 
